@@ -1,0 +1,81 @@
+/* admin.css */
+
+/* Body and container spacing */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Card styling */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Headings */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    max-width: 30%;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #138496;
+}
+
+.btn-secondary {
+    max-width: 30%;
+    margin-top: 20px;
+    border-color: #6c757d;
+}
+
+/* Address cards */
+.card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Table styling */
+.table th {
+    font-weight: 600;
+    background-color: #f1f1f1;
+}
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}

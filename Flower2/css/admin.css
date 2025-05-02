@@ -1,0 +1,228 @@
+/* admin.css */
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Dashboard Stats Cards */
+.dashboard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-right: 20px;
+}
+
+.stat-info p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.stat-link {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.stat-link:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Charts */
+.dashboard-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px;
+}
+
+.chart-container {
+    background: #ffffff;
+    flex: 1 1 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+/* Tables */
+.dashboard-tables {
+    margin: 30px;
+}
+
+.table-container {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th, .admin-table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #f0f0f0;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.admin-table img{
+    max-width: 40%;
+    height:auto;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+}
+
+.status-badge.pending {
+    background-color: #f0ad4e;
+}
+.status-badge.delivered {
+    background-color: #14e32c;
+}
+.status-badge.completed {
+    background-color: #5cb85c;
+}
+.status-badge.processing {
+    background-color: #9fab4d65;
+}
+.status-badge.cancelled {
+    background-color: #d9534f;
+}
+.status-badge.shipped {
+    background-color: #087da0;
+}
+/* Special Badges for Low Stock */
+.status-badge.warning {
+    background-color: #f0ad4e;
+}
+
+.status-badge.danger {
+    background-color: #d9534f;
+}
+
+/* Buttons */
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-stats, .dashboard-charts {
+        flex-direction: column;
+    }
+}
+.admin-navbar {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.admin-logo h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.admin-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-nav li {
+    margin: 0 10px;
+}
+
+.admin-nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.admin-nav .active a,
+.admin-nav a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+
+.admin-content {
+    padding: 30px;
+}
+

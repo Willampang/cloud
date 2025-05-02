@@ -1,0 +1,136 @@
+/* File: styles.css */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Search Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input-group button {
+    border-radius: 0;
+}
+
+.input-group .btn-secondary {
+    margin-left: 10px;
+}
+
+/* Table Styling */
+.table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td a {
+    text-decoration: none;
+}
+
+.table td a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.page-item.active a {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-item a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    font-size: 0.9rem;
+    max-width: 20%;
+    border-radius: 0;
+    text-decoration: none;
+}
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    max-width: 15%;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-delete {
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #b02a37; /* darker red */
+    color: white;
+}
